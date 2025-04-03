@@ -7,15 +7,17 @@ public class UpAndDown {
 		int rand = (int)(Math.random() * 100) + 1;// 1~ 100
 		Scanner sc = new Scanner(System.in);
 		while (true) {
+			System.out.print("숫자를 맞혀보세요. (1~100) >> ");
 			int userInput;
 			try {
 				userInput = sc.nextInt();
 			} catch (Exception e) {
 				System.out.println("정수만 입력하세요.");
-				continue;
+				break;
 			}
 			if (userInput > 100 || userInput < 0) {
 				System.out.println("1~100사이의 숫자를 입력하세요.");
+				continue;
 			}
 			
 			
@@ -31,5 +33,6 @@ public class UpAndDown {
 				continue;
 			}
 		}
+		sc.close();
 	}
 }
