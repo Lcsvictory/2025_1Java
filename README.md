@@ -34,4 +34,27 @@ week03
 week04
 ---
 
+pass
 
+week06
+---
+### String 클래스의 메소드들
+- ``char charAt(index)`` : index에 해당하는 char 리턴
+- ``String replace(oldstr, newstr)`` : oldstr을 newstr로 바꾼 String 반환
+- ``String substring(startindex, endindex)`` : startindex부터 endindex까지. (endindex직전까지)
+- ``int indexOf(String)`` : 파라미터와 일치하는 문자열이 존재하면 해당 문자열의 시작인덱스 반환, 없으면 -1
+- ``String[] split(String)`` : 파라미터를 기준으로 문자열을 나눠서 배열로 반환. 기준이 되는 문자열은 삭제됨.
+- **String 클래스의 필드** ``int length`` : 문자열 길이 반환
+
+### ArrayList 클래스의 메소드들
+    ``Array``는 배열 이라고 불린다. List와 Array는 다르다. List를 배열(Array)과 혼동하지 말자. 
+    ArrayList 클래스는 List 컬렉션에 속해있는 클래스다.
+    Array의 인덱스접근 방식과 동적 크기를 합친 개념이다.
+
+- ``int size()`` : 데이터 개수 출력
+- ``void set(index, Object)`` : index의 값을 Object로 수정함.
+- ``object remove(index)`` : index를 넣으면 해당 index를 삭제하고 값 반환
+- ``void clear()`` : 값 전체 삭제
+- ``boolean contains(Object)`` : Object가 있으면 true, 없으면 false
+- ``int indexOf(Object)`` : Object가 있으면 index출력, 없으면 -1
+- ``boolean isEmpty()`` : 비어있다면 true, 값이있다면 false
