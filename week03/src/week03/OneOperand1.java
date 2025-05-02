@@ -17,7 +17,7 @@ public class OneOperand1 {
 		short sValue = 100;
 		//int 보다 작은 데이터타입의 연산 결과는 int
 		int sResult = -sValue;
-		System.out.println("sValue = " + sValue);
+		System.out.println("sValue = " + sResult);
 		
 		byte bValue = -100;
 		int bResult = -bValue;
