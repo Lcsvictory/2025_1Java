@@ -95,3 +95,17 @@ week11
 ## 오버라이딩
 - ``반환타입``, ``매개변수``가 동일해야 한다. 매개변수명은 중요치않음.
 
+week12
+---
+## Interface
+- ``field`` : public static final
+    - 정적, 상수 필드만 가능하다.
+- ``method`` : public abstract
+    - static이 붙을 수 없다.
+- ``default method`` : public default
+    - 바디가 구현된 메소드. 
+    - **접근제한자 default가 아님**.
+- ``static method`` : public static
+
+### 익명 Interface
+- 인터페이스 객체 = new 인터페이스() {}
