@@ -130,3 +130,31 @@ week13
 여러 작업을 병렬로 처리하면 속도가 빨라져서 좋은데 사용하다 보니 병렬처리의 문제점, 공유자원문제가 있구나.
 그래서, 병렬로 작업을 처리할건데 공유자원을 접근할때만큼은 직렬처리를 해야겠다. 라는거군.
 
+week14
+---
+## Generic
+- 제네릭은 ``컴파일`` 시점에 정해진다
+
+### 인터페이스에서의 제네릭
+```
+    public interface Rentable<T> { T rent(); }
+```
+
+### 클래스에서의 제네릭
+```
+    public class Object<T> { ... }
+    // T는 임의로 사용하는것임. A, R, E 등 아무거나 사용가능.
+```
+- 사용할때
+    - 기본 자료형은 ``래퍼클래스`` 사용, ``클래스나 인터페이스``만 가능.
+```
+    Object<class or interface> obj = new Object<>();
+```
+
+### 메소드에서의 제네릭
+```
+    public <T> T returnVal(T val) {return Val}
+```
+
+### collections
+
