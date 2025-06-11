@@ -9,6 +9,7 @@ public class DataBoxEx {
 		creator.setDataBox(b1);
 		
 		ConsumerTh consumer = new ConsumerTh();
+		consumer.setName("소비자1");
 		consumer.setDataBox(b1);
 		
 		

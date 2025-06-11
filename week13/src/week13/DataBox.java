@@ -3,12 +3,12 @@ package week13;
 public class DataBox{
 	private String data = null;
 
-	public synchronized String getData() throws InterruptedException {
+	public synchronized String getData(Thread th) throws InterruptedException {
 		if (this.data == null) {
 			wait();
 		} 
 		String retVal = this.data;
-		System.out.println("Comsumer Thread가 읽은 데이터 : " + retVal);
+		System.out.println(th.getName() + "가 읽은 데이터 : " + retVal);
 		
 		this.data = null;
 		notify();
